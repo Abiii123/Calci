@@ -1,0 +1,93 @@
+# Build a Web App Called MyCalci
+
+Create a modern, responsive web application named **MyCalci** — a simple percentage calculator designed for calculating percentages of amounts in Indian Rupees (INR).
+
+## 1. Core Functionality
+
+The application should have three main sections displayed prominently:
+
+**A. Amount Input**
+- Label: "Enter Amount (₹)"
+- A numeric input field where the user can enter any amount in INR.
+- Support values such as 1000, 10000, 100000, 1000000, and decimal amounts.
+- Display amounts using the Indian numbering system where appropriate (e.g., ₹1,00,000).
+
+**B. Percentage Input**
+- Label: "Enter Percentage (%)"
+- A numeric input field where the user can enter any percentage, such as 5, 10, 12, 18, 25, or 100.
+- Include a percentage (%) indicator inside the input field.
+
+**C. Result Display**
+- Label: "Calculated Result"
+- Automatically calculate the percentage whenever the amount or percentage changes.
+- Use the formula:
+
+  Result = Amount × Percentage ÷ 100
+
+- Example: If the amount is ₹1,00,000 and the percentage is 10%, display:
+  - `10% of ₹1,00,000`
+  - **₹10,000.00**
+
+## 2. User Interface and Design
+
+Create a premium, minimal, modern calculator interface.
+
+- App name: MyCalci
+- Tagline: "Your money. Your calculations. Instantly."
+- Use a clean, elegant layout with a centered calculator card.
+- Choose a dark navy background with subtle gradients, white text, and vibrant green accents for the result.
+- Use rounded input fields, subtle shadows, smooth transitions, and generous spacing.
+- Make the calculated result the visual highlight of the interface.
+- Use a modern sans-serif font such as Inter.
+- Add a simple calculator icon beside the MyCalci logo.
+
+## 3. Additional Features
+
+- **Instant calculation:** Update the result in real time as the user types.
+- **Quick percentage buttons:** Include clickable presets for 1%, 5%, 10%, 12%, 18%, 20%, 25%, 30%, 50%, and 100%.
+- **Quick amount buttons:** Include presets for ₹1,000, ₹10,000, ₹50,000, ₹1,00,000, and ₹10,00,000.
+- **Copy result:** Add a button to copy the calculated amount to the clipboard.
+- **Reset button:** Clear both input fields and the result.
+- **Calculation summary:** Display a clear explanation such as "10% of ₹1,00,000 = ₹10,000".
+- **Indian number formatting:** Use the Indian locale (`en-IN`) and the INR currency format.
+- **Decimal precision:** Show two decimal places for currency results.
+- **Input validation:** Prevent negative amounts and invalid percentage values. Allow 0% and 100% or higher percentages when appropriate.
+- **Keyboard support:** Pressing Enter should not reload the page or interrupt calculations.
+
+## 4. Responsive Design
+
+- Desktop: Center the calculator card with a polished, spacious layout.
+- Mobile: Stack all inputs and buttons vertically, with comfortable touch targets.
+- Tablet: Maintain a balanced layout and readable typography.
+- Ensure the app works correctly in modern browsers.
+
+## 5. Technical Requirements
+
+- Build a fully functional frontend using React and TypeScript.
+- Use Tailwind CSS for styling.
+- Use reusable React components and clean, maintainable code.
+- Use JavaScript's `Intl.NumberFormat('en-IN', { style: 'currency', currency: 'INR' })` for currency formatting.
+- Keep all calculations accurate and responsive.
+- No backend or database is required.
+- Do not add authentication, subscriptions, ads, or unnecessary features.
+- Ensure all buttons and input fields work properly; do not create a static mockup.
+
+## 6. Example Calculation
+
+When the user enters:
+
+Amount: ₹1,00,000
+
+Percentage: 10%
+
+The application must display:
+
+**10% of ₹1,00,000 = ₹10,000.00**
+
+When the user changes the percentage to 18%, the result should immediately update to ₹18,000.00.
+
+## 7. Final Deliverable
+
+Build the complete, working MyCalci web application. Start the development server, test the calculations, verify the Indian currency formatting, and fix any errors before considering the project complete.
+
+Prioritize simplicity, speed, accuracy, and an excellent user experience.
